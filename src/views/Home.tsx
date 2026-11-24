@@ -1,6 +1,5 @@
 import { useState, type FormEvent } from 'react'
 import {
-  ArrowDown,
   ArrowRight,
   Award,
   BookOpen,
@@ -10,7 +9,6 @@ import {
   LockKeyhole,
   Menu,
   MessageCircle,
-  ShieldCheck,
   Sparkles,
   Star,
   X,
