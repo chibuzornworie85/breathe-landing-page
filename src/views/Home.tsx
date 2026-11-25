@@ -15,6 +15,7 @@ import {
 import logo from "../assets/logo.svg"
 import headerbg from "../assets/colouredbg.svg"
 import user from "../assets/user.svg"
+import phone from "../assets/phone.svg"
 
 const photos = {
   hero: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85',
@@ -385,33 +386,51 @@ function Home() {
         </div>
       </section>
 
-      <section className="testimonial-section section-pad">
-        <div className="content-width">
-          <div className="community-heading">
-            <span className="eyebrow">REAL PEOPLE, REAL PROGRESS</span>
-            <h2>You are not the only one<br className="desktop-break" /> figuring life out.</h2>
-            <p>Hear from the people who've made Breathe their safe space.</p>
+      <section className="app-banner" aria-labelledby="app-banner-title">
+        <div className="app-banner-inner content-width">
+          <div className="app-banner-copy">
+            <h2 id="app-banner-title">Your Mental Wellness <span>companion</span> always with you</h2>
+            <p>Download the breathe app to access therapy, self-care tools, support groups and more anytime, anywhere.</p>
           </div>
-          <div className="testimonial-grid">
-            <blockquote><div className="quote-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Having a place to talk things through has made such a difference. I feel heard, and I finally have tools I can use every day.”</p><footer><span className="quote-avatar">A</span><span><strong>Amara</strong><small>Breathe community member</small></span></footer></blockquote>
-            <blockquote><div className="quote-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Finding the right therapist felt overwhelming before. Breathe made it easier to take that first step at my own pace.”</p><footer><span className="quote-avatar quote-avatar-green">J</span><span><strong>Jordan</strong><small>Breathe community member</small></span></footer></blockquote>
-            <blockquote><div className="quote-stars" aria-label="5 out of 5 stars">★★★★★</div><p>“The small check-ins remind me to pause and be kind to myself. It feels good to know support is here when I need it.”</p><footer><span className="quote-avatar quote-avatar-yellow">T</span><span><strong>Tomi</strong><small>Breathe community member</small></span></footer></blockquote>
-          </div>
+            <img src={phone} alt="phone image" />
         </div>
       </section>
 
-      {/* <footer className="site-footer">
+      <footer className="site-footer">
         <div className="footer-inner content-width">
-          <a className="brand footer-brand" href="#home">
-            <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-            <span>breathe</span>
-          </a>
-          <p>Take a breath. You don't have to figure it all out alone.</p>
-          <a href="#home" className="back-top">Back to top <ArrowDown size={15} aria-hidden="true" /></a>
-          <span className="footer-legal">© 2026 Breathe. Your wellbeing matters.</span>
-          <span className="footer-security"><ShieldCheck size={14} /> Private and confidential</span>
+          <div className="footer-about">
+            <a className="brand footer-brand" href="#home" aria-label="Breathe home">
+             <img src={logo} alt="logo" />
+            </a>
+            <p>A safe space where we make your mental health a priority</p>
+          </div>
+          <div className="footer-column">
+            <h3>Explore</h3>
+            <a href="#how-it-works">How breathe works</a>
+            <a href="#therapy">Find a therapist</a>
+            <a href="#features">Mental wellness tools</a>
+            <a href="#community">Join our community</a>
+          </div>
+          <div className="footer-column">
+            <h3>With Breathe</h3>
+            <a href="#about">About us</a>
+            <a href="#professionals">For therapist</a>
+            <a href="#community">For organizations</a>
+            <a href="#community">Join the waitlist</a>
+            <a href="#professionals">Career</a>
+          </div>
+          <div className="footer-column footer-contact">
+            <h3>Lets stay connected</h3>
+            <a href="#about">About us</a>
+            <a href="#professionals">For therapist</a>
+            <a href="mailto:Support@breathetmc.com">Support@breathetmc.com</a>
+            <a href="mailto:Hello@breathetmc.com">Hello@breathetmc.com</a>
+          </div>
         </div>
-      </footer> */}
+        <div className="footer-bottom">
+          <div className="content-width">2026 Breathe. All rights reserved</div>
+        </div>
+      </footer>
     </main>
   )
 }
