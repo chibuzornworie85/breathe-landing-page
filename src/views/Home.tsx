@@ -13,6 +13,9 @@ import {
   Star,
   X,
 } from 'lucide-react'
+import logo from "../assets/logo.svg"
+import headerbg from "../assets/colouredbg.svg"
+import user from "../assets/user.svg"
 
 const photos = {
   hero: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85',
@@ -108,12 +111,7 @@ function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Breathe home" onClick={closeMenu}>
-          <span className="brand-mark" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </span>
-          <span>breathe</span>
+          <img src={logo} alt="logo" />
         </a>
         <button
           className="menu-toggle"
@@ -139,10 +137,10 @@ function Home() {
       <section className="hero-section" id="home">
         <div className="hero-inner content-width">
           <div className="hero-copy">
-            <span className="eyebrow-pill">...this is your mental check-in</span>
+            <span className="eyebrow-pill">“...this is mental check”</span>
             <h1>Your mind deserves to be <span className="accent-pink">heard</span> and <span className="accent-blue">cared</span> for.</h1>
             <p className="hero-description">
-              Breathe makes mental healthcare easier to access, understand, and fit into everyday life—whether you need someone to talk to or simply a moment to breathe.
+              Breathe makes mental healthcare easier to access, understand, and fit into everyday life whether you need someone to talk to or simply a moment to breathe.
             </p>
             <div className="button-row">
               <a className="button" href="#therapy">Find your therapist <ArrowRight size={16} aria-hidden="true" /></a>
@@ -158,7 +156,7 @@ function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <img className="hero-image" src={photos.hero} alt="People sharing a thoughtful conversation in a welcoming space" />
+            {/* <img className="hero-image" src={headerbg} alt="People sharing a thoughtful conversation in a welcoming space" />
             <div className="check-in-card">
               <p className="check-in-title">How are you feeling today?</p>
               <div className="mood-list" aria-label="Mood check-in">
@@ -172,7 +170,8 @@ function Home() {
               <div className="progress-track"><span /></div>
               <p className="streak">🔥 12 day streak</p>
             </div>
-            <div className="hero-sparkle" aria-hidden="true"><Sparkles size={20} /></div>
+            <div className="hero-sparkle" aria-hidden="true"><Sparkles size={20} /></div> */}
+             <img src={headerbg} alt="People sharing a thoughtful conversation in a welcoming space" />
           </div>
         </div>
       </section>
@@ -191,13 +190,12 @@ function Home() {
       <section className="intro-section section-pad" id="about">
         <div className="intro-grid content-width">
           <div className="image-frame intro-image">
-            <img src={photos.person} alt="A person using their phone to connect with support from home" loading="lazy" />
-            <span className="image-note"><Heart size={15} fill="currentColor" /> A little support goes a long way</span>
+            <img src={user} alt="A person using their phone to connect with support from home" loading="lazy" />
           </div>
           <div className="section-copy">
             <span className="eyebrow">YOU'RE NOT ALONE</span>
             <h2>Some days, you just need someone to talk to.</h2>
-            <p>Whatever you're carrying—stress, anxiety, burnout, relationships, or life's everyday challenges—Breathe is a place to put it down.</p>
+            <p>Whatever you're carrying stress, anxiety, burnout, relationship challenges or just everyday life  breathe is a place to put it down.</p>
             <a className="button" href="#therapy">Talk to a therapist <ArrowRight size={16} aria-hidden="true" /></a>
           </div>
         </div>
@@ -207,7 +205,7 @@ function Home() {
         <div className="content-width">
           <div className="section-heading">
             <div>
-              <span className="eyebrow">HOW BREATHE HELPS</span>
+              <span className="eyebrow">How BREATHE helps</span>
               <h2>Mental healthcare, beyond<br className="desktop-break" /> the therapy room.</h2>
               <p>Breathe is more than therapy. It's a complete mental wellness platform designed to support you at every stage.</p>
             </div>
