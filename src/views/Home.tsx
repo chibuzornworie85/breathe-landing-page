@@ -9,7 +9,6 @@ import {
   LockKeyhole,
   Menu,
   MessageCircle,
-  Sparkles,
   Star,
   X,
 } from 'lucide-react'
