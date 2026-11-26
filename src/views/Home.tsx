@@ -16,6 +16,8 @@ import logo from "../assets/logo.svg"
 import headerbg from "../assets/colouredbg.svg"
 import user from "../assets/user.svg"
 import phone from "../assets/phone.svg"
+import session from "../assets/session.svg"
+import officeUser from "../assets/user2.svg"
 
 const photos = {
   hero: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85',
@@ -302,13 +304,13 @@ function Home() {
       <section className="giving-section section-pad">
         <div className="giving-grid content-width">
           <article className="giving-card">
-            <span className="eyebrow">GIFT THERAPY</span>
+            <span className="eyebrow">Gift therapy</span>
             <h2>Give someone a therapy session.</h2>
             <p>Support a friend, loved one or someone in need with a therapy session. Because everyone deserves a safe space to be heard.</p>
             <a className="button" href="#community">Gift a session <ArrowRight size={16} aria-hidden="true" /></a>
           </article>
           <article className="giving-card">
-            <span className="eyebrow">FUND THERAPY</span>
+            <span className="eyebrow">Fund therapy</span>
             <h2>Fund a therapy session.</h2>
             <p>Help increase access to mental healthcare by sponsoring therapy sessions for individuals who cannot afford it.</p>
             <a className="button" href="#community">Fund a session <ArrowRight size={16} aria-hidden="true" /></a>
@@ -319,10 +321,10 @@ function Home() {
       <section className="organization-section section-pad">
         <div className="organization-grid content-width">
           <div className="image-frame organization-image">
-            <img src={photos.office} alt="Colleagues working together in a bright, supportive workspace" loading="lazy" />
+            <img src={officeUser} alt="Colleagues working together in a bright, supportive workspace" loading="lazy" />
           </div>
           <div className="section-copy">
-            <span className="eyebrow">FOR ORGANIZATIONS</span>
+            <span className="eyebrow">For Organizations </span>
             <h2>Good mental health belongs at work too.</h2>
             <p>Give your people access to meaningful mental-health support without making them wait until they're struggling.</p>
             <a className="button" href="#community">Partner with us <ArrowRight size={16} aria-hidden="true" /></a>
@@ -349,7 +351,7 @@ function Home() {
             </div>
           </div>
           <div className="image-frame professional-image">
-            <img src={photos.therapist} alt="A therapist offering compassionate support in a welcoming room" loading="lazy" />
+            <img src={session} alt="A therapist offering compassionate support in a welcoming room" loading="lazy" />
           </div>
         </div>
       </section>
@@ -367,7 +369,7 @@ function Home() {
                 <span className={`feature-icon ${tone}`}><Icon size={21} fill="currentColor" aria-hidden="true" /></span>
                 <h3>{title === 'Talk' ? 'Anx' : title}</h3>
                 <p>{description}</p>
-                <ArrowLink>{link}</ArrowLink>
+                {/* <ArrowLink>{link}</ArrowLink> */}
               </article>
             ))}
           </div>
