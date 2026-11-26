@@ -364,7 +364,7 @@ function Home() {
             <p>A safe, moderated space where people share, support one another and grow together.<br className="desktop-break" /> Whatever you're going through, there's a group for that.</p>
           </div>
           <div className="feature-grid community-grid">
-            {features.map(({ icon: Icon, title, description, link, tone }) => (
+            {features.map(({ icon: Icon, title, description, tone }) => (
               <article className="feature-card" key={`community-${title}`}>
                 <span className={`feature-icon ${tone}`}><Icon size={21} fill="currentColor" aria-hidden="true" /></span>
                 <h3>{title === 'Talk' ? 'Anx' : title}</h3>
