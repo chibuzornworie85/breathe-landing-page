@@ -4,7 +4,6 @@ import {
   Award,
   BookOpen,
   Check,
-  ChevronDown,
   Heart,
   LockKeyhole,
   Menu,
@@ -18,6 +17,11 @@ import user from "../assets/user.svg"
 import phone from "../assets/phone.svg"
 import session from "../assets/session.svg"
 import officeUser from "../assets/user2.svg"
+import stageImg from "../assets/user6.svg"
+import stage2Img from "../assets/user3.svg"
+import stage3Img from "../assets/user4.svg"
+import stage4Img from "../assets/user5.svg"
+import chat from "../assets/chat.svg"
 
 const photos = {
   hero: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=85',
@@ -65,22 +69,22 @@ const therapyOptions = [
   {
     title: 'Individual therapy',
     description: "Work through life's challenges with a professional.",
-    image: photos.individual,
+    image: stageImg,
   },
   {
     title: 'Couples therapy',
     description: 'Strengthen communication and build healthier relationships.',
-    image: photos.couple,
+    image: stage2Img,
   },
   {
     title: 'Teen therapy',
     description: 'Support for young people as they navigate school, life and emotions.',
-    image: photos.teen,
+    image: stage3Img,
   },
   {
     title: 'Workplace therapy',
     description: 'Mental health support for your team and organization.',
-    image: photos.workplace,
+    image: stage4Img,
   },
 ]
 
@@ -258,13 +262,12 @@ function Home() {
             <span className="eyebrow">MENTAL CHECK-IN</span>
             <h2>How are you, really?</h2>
             <p>Sometimes "I'm fine" doesn't tell the whole story. Take a quick mental check-in and get insights, resources, and support tailored to how you're feeling.</p>
-            <a className="button" href="#features">Take a moment for you <ArrowRight size={16} aria-hidden="true" /></a>
+            <a className="button" href="#features">Talk to Therapists <ArrowRight size={16} aria-hidden="true" /></a>
           </div>
           <div className="mood-panel">
-            <div className="mood-panel-top"><span className="mood-orb">☀️</span><div><h3>Your weekly check-in</h3><p>A little time for yourself adds up.</p></div><ChevronDown size={18} /></div>
             <p className="check-in-title">How are you feeling today?</p>
             <div className="mood-list mood-list-large">
-              <span><i>😊</i> Happy</span><span><i>😔</i> Sad</span><span><i>😌</i> Normal</span><span><i>😟</i> Anxious</span><span><i>✨</i> Excited</span><span><i>😕</i> Confused</span>
+              <span><i>😊</i> Happy</span><span><i>😔</i> Sad</span><span><i>😌</i> Normal</span><span><i>😡</i> Angry</span><span><i>🥴</i> Excited</span><span><i>😕</i> Confused</span>
             </div>
             <div className="progress-label"><span>Weekly progress</span><strong>88%</strong></div>
             <div className="progress-track"><span /></div>
@@ -275,18 +278,9 @@ function Home() {
 
       <section className="toolkit-section section-pad">
         <div className="toolkit-grid content-width">
-          <div className="phone-mockup" aria-label="A preview of the Breathe wellbeing toolkit">
-            <div className="phone-header">
-              <span className="phone-greeting">Good morning</span><strong>Akin</strong>
-              <div className="affirmation-card"><span>DAILY AFFIRMATION</span><p>I am allowed to pause, breathe, and take life one step at a time. I am doing enough, and I am enough.</p></div>
-            </div>
-            <div className="journal-card"><span>JOURNAL</span><p>What made your day today?</p><small>Today, I choose to focus on what I can control, release what I cannot, and trust myself to handle whatever comes my way.</small></div>
-            <a className="phone-cta" href="#features">Explore Breathe</a>
-            <div className="phone-chips"><span>Journal</span><span>Articles</span><span>Support groups</span></div>
-            <p className="phone-caption">Your daily tools are waiting for you</p>
-          </div>
+          <img className="toolkit-chat-image" src={chat} alt="A preview of the Breathe wellbeing toolkit" />
           <div className="section-copy">
-            <span className="eyebrow">A LITTLE OF BREATHE WHENEVER YOU NEED IT</span>
+            <span className="eyebrow">A little of BREATHE whenever you need it</span>
             <h2>Tools for a calmer,<br className="desktop-break" /> brighter you.</h2>
             <p>From daily affirmations to journaling, support groups and relaxation exercises, Breathe gives you the tools to take care of your mental wellbeing, every day.</p>
             <div className="tool-list">
